@@ -27,7 +27,7 @@ public class ResultCountReducer extends Reducer<Text, IntWritable, Text, IntWrit
         // 200(성공 코드 값)의 빈도 수를 계산하기 위한 변수
         int resultCodeCount = 0;
 
-        // Shuffle and Sort로 인해 단어별로 데이터들의 값들이 List 구조로 저장됨
+        // Shuffle and Sort로 인해 성공 코드 값별로 데이터들의 값들이 List 구조로 저장됨
         // 200 : {1, 1, 1, 1, 1, 1} => 200, 6(Text, IntWritable의 데이터 타입)
         // 모든 값은 1이기에 모두 더하기 해도 됨
         for (IntWritable value : values) {

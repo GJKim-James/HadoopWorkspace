@@ -27,7 +27,7 @@ public class IPCount2Reducer extends Reducer<Text, IntWritable, Text, IntWritabl
         // IP별 빈도 수를 계산하기 위한 변수
         int ipCount = 0;
 
-        // Shuffle and Sort로 인해 단어별로 데이터들의 값들이 List 구조로 저장됨
+        // Shuffle and Sort로 인해 IP별로 데이터들의 값들이 List 구조로 저장됨
         // 192.168.0.127 : {1, 1, 1, 1, 1, 1} => 192.168.0.127, 6(Text, IntWritable의 데이터 타입)
         // 모든 값은 1이기에 모두 더하기 해도 됨
         for (IntWritable value : values) {
