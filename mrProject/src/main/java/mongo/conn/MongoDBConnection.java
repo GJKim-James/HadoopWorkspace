@@ -17,7 +17,7 @@ public class MongoDBConnection {
     public MongoDBConnection() {
 
         // MongoDB 접속 정보
-        String hostName = "192.168.169.129"; // MongoDB 접속할 IP 주소
+        String hostName = "192.168.169.134"; // MongoDB 접속할 IP 주소
         int port = 27017; // MongoDB 접속할 포트
         String userName = "myUser"; // MongoDB 아이디
         String password = "1234"; // MongoDB 비밀번호
